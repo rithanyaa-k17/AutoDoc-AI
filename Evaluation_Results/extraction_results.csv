@@ -1,0 +1,5 @@
+﻿entity_type,found,ground_truth,true_positives,false_positives,missed,precision,recall
+component,6,6,6,,,1.0,1.0
+interface,4,4,4,,,1.0,1.0
+port,4,4,4,,,1.0,1.0
+signal,3,3,3,,,1.0,1.0

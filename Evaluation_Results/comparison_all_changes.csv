@@ -1,0 +1,7 @@
+﻿change_type,before_page,after_page,section,before_text,after_text,word_level_change,potentially_affected_elements,review_note
+modified,1,1,Front matter,Version: 1.0.,Version: 1.1.,removed: [1.0.]  added: [1.1.],,Textual change only. Not classified as a defect; engineer to assess impact.
+added,,2,2.1 Software Components,,WiperPositionSensorSwc measures the wiper blade position for WiperControlSwc.,,"WiperControlSwc, WiperPositionSensorSwc",Textual change only. Not classified as a defect; engineer to assess impact.
+removed,4,,4.2 Fault Handling Flow,The WiperMotorDriverSwc performs a self-test at startup.,,,WiperMotorDriverSwc,Textual change only. Not classified as a defect; engineer to assess impact.
+modified,5,5,5 Requirements,HLD-FUN-001: WiperControlSwc shall select the wiper speed from the rain intensity.,HLD-FUN-001: WiperControlSwc shall select the wiper speed from the rain intensity and the vehicle speed.,removed: [intensity.]  added: [intensity and the vehicle speed.],WiperControlSwc,Textual change only. Not classified as a defect; engineer to assess impact.
+modified,5,5,5 Requirements,HLD-FUN-002: WiperMotorDriverSwc shall limit the motor current to 8 A.,HLD-FUN-002: WiperMotorDriverSwc shall limit the motor current to 10 A.,removed: [8]  added: [10],WiperMotorDriverSwc,Textual change only. Not classified as a defect; engineer to assess impact.
+added,,5,5 Requirements,,HLD-FUN-004: WiperPositionSensorSwc shall report the blade position.,,WiperPositionSensorSwc,Textual change only. Not classified as a defect; engineer to assess impact.

@@ -1,0 +1,72 @@
+{
+  "_note": "AutoDoc AI v2: semantic embeddings + vector store + LLM (RAG). TF-IDF is kept only as a clearly labelled fallback. Secrets (API keys) are NEVER stored here - use environment variables.",
+  "retrieval": {
+    "chunk_max_words": 90,
+    "top_k": 5,
+    "min_score": 0.08,
+    "min_query_coverage": 0.34,
+    "confidence_high": 0.35,
+    "confidence_medium": 0.18,
+    "chunk_overlap_sentences": 1
+  },
+  "ingestion": {
+    "low_text_chars": 30,
+    "repeat_line_fraction": 0.6,
+    "repeat_line_min_pages": 4
+  },
+  "extraction": {
+    "component_suffixes": [
+      "Swc",
+      "SWC",
+      "Ctrl",
+      "Controller",
+      "Manager",
+      "Driver",
+      "Handler",
+      "Monitor",
+      "Provider",
+      "Consumer"
+    ],
+    "interface_suffixes": [
+      "Interface",
+      "Service",
+      "Proxy",
+      "Skeleton",
+      "If"
+    ],
+    "title_case_component_words": [
+      "Management",
+      "Manager",
+      "Cluster",
+      "Application",
+      "Daemon",
+      "Gateway",
+      "Controller",
+      "Binding"
+    ],
+    "title_case_interface_words": [
+      "Interface"
+    ],
+    "max_entities_per_sentence_for_relations": 5
+  },
+  "checks": {
+    "near_duplicate_ratio": 0.9
+  },
+  "rag": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "dense_top_k": 5,
+    "dense_min_score": 0.22,
+    "max_context_chars": 6000,
+    "cache_dir": ".cache_index"
+  },
+  "llm": {
+    "provider": "ollama",
+    "ollama_base_url": "http://localhost:11434/v1",
+    "ollama_model": "llama3.2:3b",
+    "openai_compatible_base_url": "",
+    "openai_compatible_model": "",
+    "temperature": 0.0,
+    "max_tokens": 500,
+    "timeout_s": 180
+  }
+}

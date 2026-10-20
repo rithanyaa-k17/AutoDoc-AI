@@ -1,0 +1,11 @@
+﻿type,question,expected_pages,status,top_score,retrieved_pages_top3,expected_page_in_top3,expected_phrase_in_top3,PASS
+positive,Which component measures rain intensity?,[2],ok,0.248,"[2, 3, 4]",True,True,True
+positive,Which port is provided by RainSensorSwc?,[3],ok,0.493,"[3, 2, 4]",True,True,True
+positive,What happens when WiperMotorDriverSwc detects an overcurrent?,[4],ok,0.452,"[4, 3, 2]",True,True,True
+positive,What is the motor current limit?,[5],ok,0.254,"[5, 4]",True,True,True
+positive,How does WiperControlSwc request vehicle speed?,[4],ok,0.446,"[4, 2, 3]",True,True,True
+positive,Which signal carries the requested motor speed?,[3],ok,0.419,"[3, 4, 3]",True,True,True
+positive,What is the purpose of this document?,[1],ok,0.174,"[1, 1]",True,True,True
+negative,What is the recipe for chocolate cake?,-,insufficient,0.0,[],-,-,True
+negative,Explain quantum chromodynamics lagrangian.,-,insufficient,0.0,[],-,-,True
+negative,Who won the football world cup?,-,insufficient,0.0,[],-,-,True

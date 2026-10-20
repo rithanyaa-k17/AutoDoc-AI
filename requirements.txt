@@ -1,0 +1,10 @@
+# AutoDoc AI v2 (local RAG). Target: Windows 11, Python 3.13, CPU only.
+# NOT verified on Windows/Python 3.13 by the author - run: python Code\check_setup.py
+streamlit>=1.40
+PyMuPDF>=1.24
+scikit-learn>=1.5
+pandas>=2.2
+numpy>=1.26
+sentence-transformers>=3.0      # pulls PyTorch (CPU build on Windows) + transformers; large one-time install
+reportlab>=4.0                  # report + synthetic PDFs
+matplotlib>=3.8                 # report diagrams

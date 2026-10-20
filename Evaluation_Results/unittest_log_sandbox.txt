@@ -1,0 +1,33 @@
+test_answer_has_page_citation (test_core.TestPipeline.test_answer_has_page_citation) ... ok
+test_checks_find_duplicate_id (test_core.TestPipeline.test_checks_find_duplicate_id) ... ok
+test_compare_detects_changes (test_core.TestPipeline.test_compare_detects_changes) ... ok
+test_ingest_page_count_and_status (test_core.TestPipeline.test_ingest_page_count_and_status) ... ok
+test_insufficient_evidence (test_core.TestPipeline.test_insufficient_evidence) ... ok
+test_inventory_contains_known_components (test_core.TestPipeline.test_inventory_contains_known_components) ... ok
+test_empty_bytes (test_core.TestRobustness.test_empty_bytes) ... ok
+test_encrypted_pdf (test_core.TestRobustness.test_encrypted_pdf) ... ok
+test_entity_patterns (test_core.TestRobustness.test_entity_patterns) ... ok
+test_invalid_pdf (test_core.TestRobustness.test_invalid_pdf) ... ok
+test_scanned_like_pdf_flags_low_text (test_core.TestRobustness.test_scanned_like_pdf_flags_low_text) ... ok
+test_check_citations (test_rag.TestRag.test_check_citations) ... ok
+test_chunk_overlap_repeats_sentences (test_rag.TestRag.test_chunk_overlap_repeats_sentences) ... ok
+test_chunking_makes_progress_with_huge_overlap (test_rag.TestRag.test_chunking_makes_progress_with_huge_overlap) ... ok
+test_chunks_have_metadata_and_stay_on_one_page (test_rag.TestRag.test_chunks_have_metadata_and_stay_on_one_page) ... ok
+test_dead_llm_server_falls_back_with_warning (test_rag.TestRag.test_dead_llm_server_falls_back_with_warning) ... ok
+test_faiss_matches_numpy (test_rag.TestRag.test_faiss_matches_numpy) ... ok
+test_insufficient_evidence_refuses_without_calling_llm (test_rag.TestRag.test_insufficient_evidence_refuses_without_calling_llm) ... ok
+test_llm_client_health_and_unconfigured (test_rag.TestRag.test_llm_client_health_and_unconfigured) ... ok
+test_llm_rag_answer_has_citations_and_evidence (test_rag.TestRag.test_llm_rag_answer_has_citations_and_evidence) ... ok
+test_model_can_refuse_itself (test_rag.TestRag.test_model_can_refuse_itself) ... ok
+test_no_embedder_uses_labelled_tfidf_fallback (test_rag.TestRag.test_no_embedder_uses_labelled_tfidf_fallback) ... ok
+test_no_llm_gives_retrieval_only_never_llm_label (test_rag.TestRag.test_no_llm_gives_retrieval_only_never_llm_label) ... ok
+test_prompt_contains_rules_context_and_page_metadata (test_rag.TestRag.test_prompt_contains_rules_context_and_page_metadata) ... ok
+test_store_roundtrip_and_search (test_rag.TestRag.test_store_roundtrip_and_search) ... ok
+test_uncited_llm_answer_is_flagged (test_rag.TestRag.test_uncited_llm_answer_is_flagged) ... ok
+test_eval_script_logic_with_test_doubles (test_rag.TestRagEvalScript.test_eval_script_logic_with_test_doubles)
+Exercises evaluate_rag.run() plumbing with fakes. Output goes to a temp dir and is NOT a real result. ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 3.173s
+
+OK

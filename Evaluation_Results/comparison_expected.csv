@@ -1,0 +1,6 @@
+﻿expected_type,expected_text_contains,DETECTED
+modified,HLD-FUN-001,True
+modified,motor current,True
+added,WiperPositionSensorSwc measures,True
+added,HLD-FUN-004,True
+removed,self-test,True

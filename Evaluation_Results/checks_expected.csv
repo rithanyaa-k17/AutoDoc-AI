@@ -1,0 +1,5 @@
+﻿rule,expected_to_mention,DETECTED
+R1,HLD-FUN-002,True
+R2,WasherPumpSwc,True
+R3,RainSensorIf,True
+R4,Sig_RainIntensity,True

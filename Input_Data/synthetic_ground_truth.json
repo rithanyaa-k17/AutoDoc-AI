@@ -1,0 +1,117 @@
+{
+  "_note": "Authored together with the generator; a self-made benchmark, not an independent one.",
+  "components": [
+    "WiperControlSwc",
+    "RainSensorSwc",
+    "WiperMotorDriverSwc",
+    "VehicleSpeedProviderSwc",
+    "DiagnosticHandlerSwc",
+    "WasherPumpSwc"
+  ],
+  "interfaces": [
+    "RainSensorInterface",
+    "MotorCommandInterface",
+    "SpeedInterface",
+    "RainSensorIf"
+  ],
+  "ports": [
+    "P_RainIntensity",
+    "R_RainIntensity",
+    "P_MotorCommand",
+    "R_MotorCommand"
+  ],
+  "signals": [
+    "Sig_RainIntensity",
+    "Sig_MotorSpeedCmd",
+    "Sig_VehicleSpeed"
+  ],
+  "qa": [
+    {
+      "q": "Which component measures rain intensity?",
+      "pages": [
+        2
+      ],
+      "phrase": "RainSensorSwc measures rain intensity"
+    },
+    {
+      "q": "Which port is provided by RainSensorSwc?",
+      "pages": [
+        3
+      ],
+      "phrase": "P_RainIntensity"
+    },
+    {
+      "q": "What happens when WiperMotorDriverSwc detects an overcurrent?",
+      "pages": [
+        4
+      ],
+      "phrase": "overcurrent"
+    },
+    {
+      "q": "What is the motor current limit?",
+      "pages": [
+        5
+      ],
+      "phrase": "limit the motor current"
+    },
+    {
+      "q": "How does WiperControlSwc request vehicle speed?",
+      "pages": [
+        4
+      ],
+      "phrase": "requests the current vehicle speed"
+    },
+    {
+      "q": "Which signal carries the requested motor speed?",
+      "pages": [
+        3
+      ],
+      "phrase": "Sig_MotorSpeedCmd"
+    },
+    {
+      "q": "What is the purpose of this document?",
+      "pages": [
+        1
+      ],
+      "phrase": "Smart Wiper system"
+    }
+  ],
+  "negative_questions": [
+    "What is the recipe for chocolate cake?",
+    "Explain quantum chromodynamics lagrangian.",
+    "Who won the football world cup?"
+  ],
+  "expected_changes_v1_0_to_v1_1": [
+    {
+      "type": "modified",
+      "contains": "HLD-FUN-001"
+    },
+    {
+      "type": "modified",
+      "contains": "motor current"
+    },
+    {
+      "type": "added",
+      "contains": "WiperPositionSensorSwc measures"
+    },
+    {
+      "type": "added",
+      "contains": "HLD-FUN-004"
+    },
+    {
+      "type": "removed",
+      "contains": "self-test"
+    }
+  ],
+  "expected_affected_elements": [
+    "WiperControlSwc",
+    "WiperMotorDriverSwc",
+    "WiperPositionSensorSwc"
+  ],
+  "expected_inconsistency_rules_v1_0": {
+    "R1": "HLD-FUN-002",
+    "R2": "WasherPumpSwc",
+    "R3": "RainSensorIf",
+    "R4": "Sig_RainIntensity"
+  }
+}
