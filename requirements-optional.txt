@@ -1,4 +1,0 @@
-# Optional extras (the app works without them)
-faiss-cpu>=1.9        # FAISS vector search backend (otherwise exact NumPy search is used)
-pytesseract>=0.3.10   # OCR for scanned pages (also needs the Tesseract program installed)
-Pillow>=10.0
